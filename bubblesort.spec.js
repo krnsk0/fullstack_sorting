@@ -4,8 +4,6 @@ describe('Bubble Sort', function() {
   });
 
   it('sorts two elements requires exactly one swap', function() {
-    console.log(swap);
-
     spyOn(window, 'swap').and.callThrough();
     expect(bubbleSort([2, 1])).toEqual([1, 2]);
     expect(swap.calls.count()).toEqual(1);
